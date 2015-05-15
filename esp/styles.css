@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+body{
+	background-color: #000;
+	padding: 30px 0 0 30px;
+	
+}
+a p{
+	font-family: 'lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+a, a:visited, a:active{
+	text-decoration: none;
+}
+#prefs{
+	float: right; 
+	margin: -100px 30px 0 0;
+	color: #444;
+}
+#prefs:hover{
+	color: #ccc;
+	cursor: pointer;
+}
+
+button{
+	background-color: rgba(200,200,200,.4);
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: none;
+	padding: 20px;
+	outline: none;
+}
+button:hover{
+	background-color: rgba(230,230,230,.4);
+	color: red;
+		cursor: pointer;
+
+}
+#header{
+	background-image: url('head.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 400px;
+}
+h1{
+	color: #fff;
+	font-family: 'lato', sans-serif;
+	font-weight: 900;
+	
+}
+/*
+.led:before{
+	color: #ccc;
+	content: "Unlock";
+	font-family: 'lato', sans-serif;
+		font-size: 40px;
+		font-weight: 900;
+
+}
+*/
+/*
+.Lock:before{
+	color: #ccc;
+	content: "Lock";
+	font-family: 'lato', sans-serif;
+	font-size: 40px;
+		font-weight: 900;
+
+}
+*/
+.Lock: after{
+	content: none;
+}
+.Lock:before content{
+	color: #000;
+}
+
+.locked:before{
+	content: "Unlock";
+	color: #ccc;
+	font-family: 'lato',sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+	}
+.unlocked:before{
+	content: "Lock";
+	color: #ccc;
+	font-family: 'lato',sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+}
+.waiting:before{
+	content: ". . .";
+	color: #ccc;
+	font-family: 'lato',sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+}
